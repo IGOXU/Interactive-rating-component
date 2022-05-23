@@ -1,0 +1,12 @@
+{
+  "name": "interactive-rating-component-main",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Interactive rating component challenge](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch ./scss/index.scss ./src/css/index.css"
+  },
+  "keywords": [],
+  "author": "IO <igoxuu@gmail.com>",
+  "license": "ISC"
+}
