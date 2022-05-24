@@ -14,3 +14,55 @@
 *::before, *::after{
   box-sizing: border-box;
 }
+
+button{
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.button{
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  height: 2.8rem;
+  text-transform: capitalize;
+  transition: background-color .2s ease-in-out;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    height: 3.06rem;
+  }
+  
+  &:hover{
+    background-color: color("white");
+    color: color("orange");
+  }
+
+  &-circle{
+    background-color: color("white-light");
+    border-radius: 50%;
+    color: color("light-grey");
+    width: 2.8rem;
+    
+    @media (min-width: 1024px) {
+      height: 3.46rem;
+      width: 3.46rem;
+    }
+    
+    &:hover{
+      background-color: color("orange");
+      color: color("white");
+    }
+  }
+  
+  &-active{
+    background-color: color("medium-grey");
+    color: color("white");
+
+    &:hover{
+      background-color: color("medium-grey");
+    }
+  }
+}

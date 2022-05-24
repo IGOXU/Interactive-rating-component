@@ -1,7 +1,126 @@
 .card-container{
+  @include flex;
+  background-color: color("very-dark-blue");
+  height: 100%;
+  min-height: 100vh;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem; 
+  width: 100vw;
   
+  @media (max-height: 280px) { 
+    height: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 }
 
 .card{
+  background-color: color("dark-blue");
+  border-radius: 1rem;
+  box-shadow: .2rem .2rem .5rem rgba(color("dark-blue"), .5);
+  color: color("white");
+  height: 360px;
+  padding: 1.6rem;
+  width: 327px;
   
+  @media (min-width: 1024px) {
+    height: 410px;
+    width: 418px;
+  }
+
+  &__header{
+    .star{
+      object-fit: contain;
+      position: relative;
+      @include flex(start);
+
+      img{
+        background-color: color("white-light");
+        border-radius: 50%;
+        padding: .8rem;
+        
+        @media (min-width: 1024px) {
+          font-size: 2.1rem;
+          padding: 1rem;
+        }
+      }
+    }
+    
+    .thankyou{
+      height: 160px;
+      margin-top: .5rem;
+      object-fit: contain;
+      position: relative;
+      @include flex(center, start);
+      
+      @media (min-width: 1024px) {
+        height: 175px;
+      }
+
+      figcaption{
+        @include flex;
+        background-color: color("white-light");
+        border-radius: 1rem;
+        bottom: 0;
+        color: rgba(color("orange"), .8);
+        font-size: .9rem;
+        font-weight: 400;
+        height: 2.133rem;
+        padding: 0 1rem;
+        position: absolute;
+      }
+      
+      img{
+        height: 6.53rem;
+        @media (min-width: 1024px) {
+          height: 105px;
+        }
+      }
+    }
+
+  }
+
+  &__body{
+    h1{
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.4rem;
+      margin-top: 1.4rem;
+
+      @media (min-width: 1024px) {
+        font-size: 2rem;
+      }
+    }
+    
+    p{
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 1.6rem;
+      
+      
+      &.p-star{
+        font-size: .939rem;
+        @media (min-width: 1024px) {
+          font-size: 1.1rem;
+        }
+      }
+      &.p-thankyou{
+        font-size: .9rem;
+        @media (min-width: 1024px) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  &__footer{
+    &-buttons{
+      @include flex(space-between);
+      margin-bottom: 1.46rem;
+
+      @media (min-width: 1024px) {
+        margin-bottom: 2.133rem;
+      }
+    }
+  }
 }

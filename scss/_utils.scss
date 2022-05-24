@@ -6,9 +6,28 @@
   text-transform: capitalize;
 }
 
-.no-decoration{
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
+@each $key, $value in $colors {
+  .bg-#{$key}{
+    background-color: $value;
+  }
+  
+  .text-#{$key}{
+    color: $value;
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mb-21{
+  margin-bottom: 21px;
+}
+
+.mt-21{
+  margin-top: 21px;
+}
+
+.none{
+  display: none;
 }

@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 :root {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 12px;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
 }
 
 * {
@@ -14,6 +14,55 @@
   box-sizing: border-box;
 }
 
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.button {
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  height: 2.8rem;
+  text-transform: capitalize;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .button {
+    height: 3.06rem;
+  }
+}
+.button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+.button-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: hsl(217deg, 12%, 63%);
+  width: 2.8rem;
+}
+@media (min-width: 1024px) {
+  .button-circle {
+    height: 3.46rem;
+    width: 3.46rem;
+  }
+}
+.button-circle:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.button-active {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+.button-active:hover {
+  background-color: hsl(216deg, 12%, 54%);
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -22,11 +71,208 @@
   text-transform: capitalize;
 }
 
-.no-decoration {
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
+.bg-orange {
+  background-color: hsl(25deg, 97%, 53%);
+}
+
+.text-orange {
+  color: hsl(25deg, 97%, 53%);
+}
+
+.bg-white {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.text-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.bg-white-light {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-white-light {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-light-grey {
+  background-color: hsl(217deg, 12%, 63%);
+}
+
+.text-light-grey {
+  color: hsl(217deg, 12%, 63%);
+}
+
+.bg-medium-grey {
+  background-color: hsl(216deg, 12%, 54%);
+}
+
+.text-medium-grey {
+  color: hsl(216deg, 12%, 54%);
+}
+
+.bg-dark-blue {
+  background-color: hsl(213deg, 19%, 18%);
+}
+
+.text-dark-blue {
+  color: hsl(213deg, 19%, 18%);
+}
+
+.bg-very-dark-blue {
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+.text-very-dark-blue {
+  color: hsl(216deg, 12%, 8%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-21 {
+  margin-bottom: 21px;
+}
+
+.mt-21 {
+  margin-top: 21px;
+}
+
+.none {
+  display: none;
+}
+
+.card-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(216deg, 12%, 8%);
+  height: 100%;
+  min-height: 100vh;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  width: 100vw;
+}
+@media (max-height: 280px) {
+  .card-container {
+    height: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+.card {
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(37, 45, 55, 0.5);
+  color: hsl(0deg, 0%, 100%);
+  height: 360px;
+  padding: 1.6rem;
+  width: 327px;
+}
+@media (min-width: 1024px) {
+  .card {
+    height: 410px;
+    width: 418px;
+  }
+}
+.card__header .star {
+  object-fit: contain;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: start;
+}
+.card__header .star img {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+@media (min-width: 1024px) {
+  .card__header .star img {
+    font-size: 2.1rem;
+    padding: 1rem;
+  }
+}
+.card__header .thankyou {
+  height: 160px;
+  margin-top: 0.5rem;
+  object-fit: contain;
+  position: relative;
+  align-items: start;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .card__header .thankyou {
+    height: 175px;
+  }
+}
+.card__header .thankyou figcaption {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  bottom: 0;
+  color: rgba(251, 116, 19, 0.8);
+  font-size: 0.9rem;
+  font-weight: 400;
+  height: 2.133rem;
+  padding: 0 1rem;
+  position: absolute;
+}
+.card__header .thankyou img {
+  height: 6.53rem;
+}
+@media (min-width: 1024px) {
+  .card__header .thankyou img {
+    height: 105px;
+  }
+}
+.card__body h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+  margin-top: 1.4rem;
+}
+@media (min-width: 1024px) {
+  .card__body h1 {
+    font-size: 2rem;
+  }
+}
+.card__body p {
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+.card__body p.p-star {
+  font-size: 0.939rem;
+}
+@media (min-width: 1024px) {
+  .card__body p.p-star {
+    font-size: 1.1rem;
+  }
+}
+.card__body p.p-thankyou {
+  font-size: 0.9rem;
+}
+@media (min-width: 1024px) {
+  .card__body p.p-thankyou {
+    font-size: 1.1rem;
+  }
+}
+.card__footer-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.46rem;
+}
+@media (min-width: 1024px) {
+  .card__footer-buttons {
+    margin-bottom: 2.133rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
