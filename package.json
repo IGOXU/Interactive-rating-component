@@ -7,6 +7,6 @@
     "start": "sass --watch ./scss/index.scss ./src/css/index.css"
   },
   "keywords": [],
-  "author": "IO <igoxuu@gmail.com>",
+  "author": "IO",
   "license": "ISC"
 }

@@ -15,9 +15,9 @@
 }
 
 .card{
-  background-color: color("dark-blue");
+  background: linear-gradient(color("dark-blue"), color("very-dark-blue"));
   border-radius: 1rem;
-  box-shadow: .2rem .2rem .5rem rgba(color("dark-blue"), .5);
+  box-shadow: 0 0 2rem rgba(black, .6);
   color: color("white");
   height: 360px;
   padding: 1.6rem;

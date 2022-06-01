@@ -8,7 +8,7 @@ let rate = RATINGS[3].getAttribute('aria-rating'); //Default value
 /* Get rate and select the button active */
 [...RATINGS].map((item) =>
   item.addEventListener('click', () => {
-    rate = item.getAttribute('aria-rating');
+    rate = item.getAttribute('data-rating');
 
     [...RATINGS].map((item) => item.classList.remove('button-active'));
     item.classList.add('button-active');
